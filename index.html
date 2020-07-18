@@ -4,59 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar template</title>
-
-    
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
 </head>
 <body>
-    <div class="sectionWrapper">
-        <div id="section01" class="section">
-            <div class="container">
-                <h3>Page 1</h3>
-            </div>
-        </div>
-
-        <div id="section02" class="section">
-            <div class="container">
-                <h3>Page 2</h3>
-            </div>
-        </div>
-
-        <div id="section03" class="section">
-            <div class="container">
-                <h3>Page 3</h3>
-            </div>
-        </div>
-
+    <div class="wrapper">
+        <section id="section01">
+            <h1>Section 1</h1>
+            <p>You can navigate to different sections by swiping.</p>
+        </section>
+        <section id="section02">
+            <h1>Section 2</h1>
+            <p>You can also navigate by using the navbar on the bottom.</p>
+        </section>
+        <section id="section03">
+            <h1>Section 3</h1>
+            <p>This template is made with HTML and CSS. The layout will adapt responsively to your device.</p>
+        </section>
         <nav>
-            <ul>
-                <a href="#section01">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        aria-labelledby="title" fill="currentColor">
-                        <title id="title">Clock Icon</title>
-                        <path
-                            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
-                        <path d="M13 7L11 7 11 13 17 13 17 11 13 11z" />
-                    </svg>
-                </a>
-                <a href="#section02" class="homeButton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        aria-labelledby="title" fill="currentColor">
-                        <title id="title">Home Icon</title>
-                        <path
-                            d="M3,13h1v2v5c0,1.103,0.897,2,2,2h3h6h3c1.103,0,2-0.897,2-2v-5v-2h1c0.404,0,0.77-0.244,0.924-0.617 c0.155-0.374,0.069-0.804-0.217-1.09l-9-9c-0.391-0.391-1.023-0.391-1.414,0l-9,9c-0.286,0.286-0.372,0.716-0.217,1.09 C2.23,12.756,2.596,13,3,13z M10,20v-5h4v5H10z M12,4.414l6,6V15l0,0l0.001,5H16v-5c0-1.103-0.897-2-2-2h-4c-1.103,0-2,0.897-2,2v5 H6v-5v-3v-1.586L12,4.414z" />
-                    </svg>
-                </a>
-                <a href="#section03">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        aria-labelledby="title" fill="currentColor">
-                        <title id="title">Map Icon</title>
-                        <path
-                            d="M21.447,6.105l-6-3c-0.281-0.141-0.613-0.141-0.895,0L9,5.882L3.447,3.105c-0.31-0.154-0.679-0.139-0.973,0.044 C2.18,3.332,2,3.653,2,4v13c0,0.379,0.214,0.725,0.553,0.895l6,3c0.281,0.141,0.613,0.141,0.895,0L15,18.118l5.553,2.776 C20.694,20.965,20.847,21,21,21c0.183,0,0.365-0.05,0.525-0.149C21.82,20.668,22,20.347,22,20V7C22,6.621,21.786,6.275,21.447,6.105 z M10,7.618l4-2v10.764l-4,2V7.618z M4,5.618l4,2v10.764l-4-2V5.618z M20,18.382l-4-2V5.618l4,2V18.382z" />
-                    </svg>
-                </a>
-            </ul>
+            <a href="#section01">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="title" fill="currentColor">
+                    <title id="title">Home Icon</title>
+                    <path fill="none" d="M8.003 15c0-1.103.897-2 2-2h4c1.103 0 2 .897 2 2v5h3.001l-.001-8.586-7-7-7 7V20h3v-5z"/><path fill="none" d="M10.003 15h4v5h-4z"/><path d="M5.003 22h14c1.103 0 2-.897 2-2v-9a.997.997 0 00-.293-.707l-8-8a.999.999 0 00-1.414 0l-8 8a.997.997 0 00-.293.707v9c0 1.103.897 2 2 2zm5-2v-5h4v5h-4zm-5-8.586l7-7 7 7L19.004 20h-3.001v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5h-3v-8.586z"/>
+                </svg>
+            </a>
+            <a href="#section02">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="title" fill="currentColor">
+                    <title id="title">Bell Icon</title>
+                    <path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 003 16v2a1 1 0 001 1h16a1 1 0 001-1v-2a.996.996 0 00-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 007 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 002.818-2H9.182A2.98 2.98 0 0012 22z"/>
+                </svg>
+            </a>
+            <a href="#section03">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="title" fill="currentColor">
+                    <title id="title">Search Icon</title>
+                    <path d="M10 18a7.952 7.952 0 004.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0018 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/>
+                </svg>
+            </a>
         </nav>
     </div>
 </body>
